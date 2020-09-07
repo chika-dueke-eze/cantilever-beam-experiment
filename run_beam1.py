@@ -53,7 +53,7 @@ ax.set(
 # Use tight layout
 fig.tight_layout()
 
-# Save the graph as EPS and PDF
-fig.savefig('Beam1plot.eps')
-fig.savefig('Beam1plot.pdf')
-fig.savefig('Beam1plot.png')
+# Save the graph as EPS and PDF and PNG
+fig.savefig('Beam2plot.eps')
+fig.savefig('Beam2plot.pdf')
+fig.savefig('Beam2plot.png')
