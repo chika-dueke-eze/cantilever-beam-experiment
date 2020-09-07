@@ -1,15 +1,3 @@
-"""
-[run_beam2.py]
-[Chika Dueke-Eze]
-[06-09-2020]
-Based on: RunCan.py
-Written by: Michael R. Gustafson II
-
-I understand and have adhered to all the tenets of the Duke Community Standard
-in creating this code.
-Signed: [cdg19]
-"""
-
 # %% import modules
 import numpy as np
 import pandas as pd
@@ -65,22 +53,7 @@ ax.set(
 # Use tight layout
 fig.tight_layout()
 
-# Save the graph as EPS and PDF
+# Save the graph as EPS and PDF and PNG
 fig.savefig('Beam2plot.eps')
 fig.savefig('Beam2plot.pdf')
-
-
-#%%% get the values we need in the proper notation (OPTIONAL)
-for a in range(beam_data.size // 2):
-    print(
-        "{:0.4e} & {:0.4e} \\\\".format(
-         beam_data.iloc[a, 0], beam_data.iloc[a, 1]
-        )
-    )
-
-#values of p on line 34
-compliance = 0.00480489
-init_disp = -0.02162433
-
-slope_int = "{:0.4e} and {:0.4e}".format(compliance, init_disp)         #get the values in 5 significant figures
-print("The slope and intercept in scientific notation are", slope_int, "respectively")
+fig.savefig('Beam2plot.png')
